@@ -1,0 +1,19 @@
+Descripción del Proceso:
+Inicialización:
+
+Se define una población inicial de individuos, donde cada individuo representa una solución posible al problema (una lista de 0s y 1s, donde 1 indica que el artículo está seleccionado).
+Evaluación:
+
+Cada individuo es evaluado mediante la función de evaluación evalKnapsack, que calcula el valor total y el peso de los artículos seleccionados. Si el peso excede la capacidad de la mochila, se penaliza la solución asignándole un valor de 0.
+Operadores Genéticos:
+
+Selección: Se utiliza el método de torneo para seleccionar individuos que se reproducirán.
+Cruce (Crossover): Se intercambian secciones de dos individuos seleccionados para generar descendientes.
+Mutación: Se aplican mutaciones (cambios aleatorios en los genes) a algunos individuos para introducir diversidad en la población.
+Iteración:
+
+El algoritmo evoluciona la población a través de varias generaciones (100 generaciones en este caso), aplicando selección, cruce y mutación para mejorar las soluciones.
+Resultado Final:
+
+Al finalizar, el mejor individuo encontrado es aquel que maximiza el valor de los artículos seleccionados sin exceder el peso máximo de la mochila.
+Se imprime el mejor conjunto de artículos, su valor total, y su peso.
